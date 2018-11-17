@@ -1,0 +1,20 @@
+#banner {
+    color: white;
+    text-align: center;
+    background-color: transparent
+    border-color: black;
+}
+#menu {
+    text-align:justify;
+    color: yellow
+}
+#principal {
+    background-color: black;
+    text-align: left;
+}
+#lista{
+    background-color: blue;
+    text-align: center;
+
+
+}

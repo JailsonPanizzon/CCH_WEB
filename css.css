@@ -6,15 +6,19 @@
 }
 #menu {
     text-align:justify;
-    color: yellow
+    color: rgba(255, 255, 255, .9)
 }
 #principal {
     background-color: black;
     text-align: left;
 }
 #lista{
-    background-color: blue;
+    background-color: rgba(255, 255, 0, .2);
     text-align: center;
 
+
+}
+#patrocinadores {
+    background-color: rgba(255, 255, 255, .5);
 
 }

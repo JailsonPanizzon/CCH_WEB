@@ -2,7 +2,6 @@
     color: white;
     text-align: center;
     background-color: transparent
-    border-color: black;
 }
 #menu {
     text-align:justify;
@@ -21,4 +20,14 @@
 #patrocinadores {
     background-color: rgba(255, 255, 255, .5);
 
+}
+.bt_titulo {
+    background-color: #252525;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2em;
+    color: yellow;
+    border-color: #262626;
+    font-weight: bold;
+    width: 110%;
+    height: 25%;
 }

@@ -41,7 +41,7 @@
     border-color: #262626;
     font-weight: bold;
     width: auto;
-    height: auto;
+    height: 100%;
 }
 .eventos{
     min-width: 20%;

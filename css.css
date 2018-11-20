@@ -6,7 +6,7 @@
 #menu {
     text-align:justify;
     color: rgba(255, 255, 255, .9);
-    padding: 1%;
+    padding-top: 1%;
 }
 #principal {
     background-color: black;
@@ -29,6 +29,7 @@
     font-size: 70%;
     color: yellow;
     font-weight: bold;
+    border: none;
     width: auto;
     height: auto;
 }

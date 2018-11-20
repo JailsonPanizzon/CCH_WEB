@@ -25,23 +25,23 @@
     function fundo() {
         if ($(window).scrollTop() > 0.1 && $(window).scrollTop() < 10) {
             document.getElementById("logo").style.width = "90%";
-            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.17)";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.15)";
         }
         else if ($(window).scrollTop() > 10 && $(window).scrollTop() < 20) {
             document.getElementById("logo").style.width = "80%";
-            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.25)";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.30)";
         }
          else if ($(window).scrollTop() > 20 && $(window).scrollTop() < 30) {
             document.getElementById("logo").style.width = "80%";
-            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.25)";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.35)";
         } 
         else if ($(window).scrollTop() > 30 && $(window).scrollTop() < 40) {
             document.getElementById("logo").style.width = "80%";
-            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.25)";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.45)";
         }
         else if ($(window).scrollTop() > 40 && $(window).scrollTop() < 50) {
             document.getElementById("logo").style.width = "80%";
-            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.25)";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.457)";
         }
         else if ($(window).scrollTop() > 50 && $(window).scrollTop() < 60) {
             document.getElementById("logo").style.width = "70%";
@@ -49,15 +49,15 @@
         }
         else if ($(window).scrollTop() > 60 && $(window).scrollTop() < 70) {
             document.getElementById("logo").style.width = "60%";
-            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.65)";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.55)";
         }
         else if ($(window).scrollTop() > 70 && $(window).scrollTop() < 80) {
             document.getElementById("logo").style.width = "50%";
-            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.85)";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.65)";
         }
         else if ($(window).scrollTop() > 80 && $(window).scrollTop() < 90) {
             document.getElementById("logo").style.width = "40%";
-            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.85)";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.75)";
         }
         else if ($(window).scrollTop() > 90 && $(window).scrollTop() < 100) {
             document.getElementById("logo").style.width = "40%";
@@ -65,7 +65,7 @@
         }
         else if ($(window).scrollTop() > 100 && $(window).scrollTop() < 110) {
             document.getElementById("logo").style.width = "40%";
-            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.85)";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.95)";
         }
         else if ($(window).scrollTop() > 125) {
             document.getElementById("logo").style.width = "40%";
@@ -77,7 +77,7 @@
         }
     }
     var cont = 1;
-    var intervalo = window.setInterval(troca_noticia, 5000);
+    var intervalo = window.setInterval(troca_noticia, 30);
 
     function troca_noticia() {
         switch (cont) {
@@ -111,7 +111,7 @@
                     <button class="bt_titulo">Notícias</button>
                 </div>
                 <div class="col-4 col-md-2" id="menu">
-                    <button class="bt_titulo">Associado</button>
+                    <button class="bt_titulo">Sócio</button>
                 </div>
                 <div class="col-4 col-md-2" id="menu">
                     <button class="bt_titulo">Esportes</button>
@@ -132,7 +132,7 @@
 
     </div>
     <div class="col-12 col-md-12" id="principal">
-        <div class="row" style="height: 130px">
+        <div class="row" style="height: 80%">
             <div class="col-5 col-md-5"> </div>
             <div class="col-6 col-md-6">
                 <div class="evento11">EVENTOS:</div>

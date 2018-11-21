@@ -9,17 +9,12 @@
     padding-top: 1%;
 }
 #principal {
-    background-color: black;
+    background-color: white;
     text-align: left;
 }
-#lista{
-    background-color: rgba(255, 255, 0, .2);
-    text-align: center;
 
-
-}
 #patrocinadores {
-    background-color: rgba(255, 255, 255, .5);
+    background-color: black;
 
 }
 .bt_titulo {

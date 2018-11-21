@@ -77,7 +77,7 @@
         }
     }
     var cont = 1;
-    var intervalo = window.setInterval(troca_noticia, 30);
+    var intervalo = window.setInterval(troca_noticia, 30000);
 
     function troca_noticia() {
         switch (cont) {
@@ -93,6 +93,13 @@
         cont != 2 ? cont++ : cont = 1;
     }
 
+    function hoverBotao(iden){
+        document.getElementById(iden).style.backgroundColor = "#303030";
+    }
+    function unHoverBotao(iden){
+        document.getElementById(iden).style.backgroundColor = "transparent";
+    }
+
 </script>
 
 <script src="jquery-3.3.1.js"></script>
@@ -100,7 +107,7 @@
 
 <body onload="troca_noticia()">
     <div style="position: fixed">
-        <img src="image/fundo2.jpg" width="100%">
+        <img src="image/fundo2.jpg" height="100%">
     </div>
     <div class="row" style="position: fixed;z-index: 2;" id="superior">
         <div class="col-3 col-md-2"><img src="image/galo23.png" width="110%" id="logo"></div>
@@ -108,19 +115,19 @@
             <div class="row">
                 <div class="col-0 col-md-2 "> </div>
                 <div class="col-4 col-md-2" id="menu">
-                    <button class="bt_titulo">Notícias</button>
+                    <button class="bt_titulo" id="not" onmouseover="hoverBotao('not')" onmouseout="unHoverBotao('not')">Notícias</button>
                 </div>
                 <div class="col-4 col-md-2" id="menu">
-                    <button class="bt_titulo">Sócio</button>
+                    <button class="bt_titulo" id="soc" onmouseover="hoverBotao('soc')" onmouseout="unHoverBotao('soc')">Sócio</button>
                 </div>
                 <div class="col-4 col-md-2" id="menu">
-                    <button class="bt_titulo">Esportes</button>
+                    <button class="bt_titulo" id="esp" onmouseover="hoverBotao('esp')" onmouseout="unHoverBotao('esp')">Esportes</button>
                 </div>
                 <div class="col-4 col-md-2" id="menu">
-                    <button class="bt_titulo">Eventos</button>
+                    <button class="bt_titulo" id="eve" onmouseover="hoverBotao('eve')" onmouseout="unHoverBotao('eve')">Eventos</button>
                 </div>
                 <div class="col-4 col-md-2" id="menu">
-                    <button class="bt_titulo">Contato</button>
+                    <button class="bt_titulo" id="con" onmouseover="hoverBotao('con')" onmouseout="unHoverBotao('con')">Contato</button>
                 </div>
             </div>
         </div>
@@ -145,12 +152,8 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-4 col-md-2" id="lista">
 
-                I have a dream, I wanna be Nicolas cage
-            </div>
-
-            <div class="col-8 col-md-7 " id="principal">
+            <div class="col-12 col-md-9 " id="principal">
 
                 Caros amigos, a constante divulgação das informações nos obriga à análise das regras de conduta
                 normativas. Percebemos, cada vez mais, que a complexidade dos estudos efetuados facilita a criação das

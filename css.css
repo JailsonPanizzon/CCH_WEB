@@ -11,11 +11,28 @@
 #principal {
     background-color: white;
     text-align: left;
+    margin-bottom: 1%;
+    padding-bottom: 2%;
+    margin-top: 1%;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+#eventofundo{
+    background-color: #DDDDDD;
+    text-align: left;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-top: 1%;
 }
 
 #patrocinadores {
     background-color: black;
-
+    margin-bottom: 1%;
+    padding-bottom: 2%;
+    margin-top: 1%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 .bt_titulo {
     background-position-x: center;

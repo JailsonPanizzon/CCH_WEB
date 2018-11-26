@@ -18,10 +18,7 @@
         el.style.backgroundColor = corbotoes
     }
     window.onscroll = fundo;
-    function topo() {
-        var val = document.getElementById("superior").offsetTop
-
-    }
+    
     function fundo() {
         if ($(window).scrollTop() > 0.1 && $(window).scrollTop() < 10) {
             document.getElementById("logo").style.width = "90%";
@@ -34,6 +31,7 @@
         else if ($(window).scrollTop() > 20 && $(window).scrollTop() < 30) {
             document.getElementById("logo").style.width = "80%";
             document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.35)";
+
         }
         else if ($(window).scrollTop() > 30 && $(window).scrollTop() < 40) {
             document.getElementById("logo").style.width = "80%";
@@ -74,6 +72,7 @@
         else if ($(window).scrollTop() <= 0.1) {
             document.getElementById("logo").style.width = "110%";
             document.getElementById("superior").style.backgroundColor = "transparent";
+            document.getElementsByClassName("bt_titulo").style.width = "100%";
         }
     }
     var cont = 1;
@@ -229,7 +228,7 @@
 
             </div>
             <div class="col-12 col-md-3" id="patrocinadores">
-                <img src="image/utfprbranco.png" width="100%">
+                <img src="image/UTFPR sem fundo.png" width="100%">
 
 
             </div>

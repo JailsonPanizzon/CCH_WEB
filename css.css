@@ -25,6 +25,10 @@
     padding-top: 1%;
     margin-top: 1%;
 }
+.event{
+    float: none;
+    margin-left: 0 auto ;
+}
 
 #patrocinadores {
     background-color: black;
@@ -53,9 +57,9 @@
     color: yellow;
     border-color: #262626;
     font-weight: bold;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
 }
 .eventos{
-    min-width: 20%;
+    width: 100%;
 };

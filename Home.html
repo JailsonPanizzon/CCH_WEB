@@ -31,10 +31,10 @@
             document.getElementById("logo").style.width = "80%";
             document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.30)";
         }
-         else if ($(window).scrollTop() > 20 && $(window).scrollTop() < 30) {
+        else if ($(window).scrollTop() > 20 && $(window).scrollTop() < 30) {
             document.getElementById("logo").style.width = "80%";
             document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.35)";
-        } 
+        }
         else if ($(window).scrollTop() > 30 && $(window).scrollTop() < 40) {
             document.getElementById("logo").style.width = "80%";
             document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.45)";
@@ -77,9 +77,15 @@
         }
     }
     var cont = 1;
-    var intervalo = window.setInterval(troca_noticia, 30000);
+    var intervalo = window.setInterval(troca_noticia, 3000);
 
-    function troca_noticia() {
+    function troca_noticia(num = 0) {
+
+        cont = cont - num;
+        if(cont < 0){
+            cont = 2;
+        }
+
         switch (cont) {
             case 1:
                 $("#evento1").hide();
@@ -90,13 +96,13 @@
                 $("#evento1").show();
                 break;
         }
-        cont != 2 ? cont++ : cont = 1;
+        cont < 2 ? cont++ : cont = 1;
     }
 
-    function hoverBotao(iden){
+    function hoverBotao(iden) {
         document.getElementById(iden).style.backgroundColor = "#303030";
     }
-    function unHoverBotao(iden){
+    function unHoverBotao(iden) {
         document.getElementById(iden).style.backgroundColor = "transparent";
     }
 
@@ -139,14 +145,35 @@
 
     </div>
     <div class="container">
-        <div class="row" style="height: 80%">
-            <div class="col-5 col-md-5" id="eventofundo"> </div>
-            <div class="col-7 col-md-7" id="eventofundo">
-                <img id="evento1" class="eventos" src="image/banner_cervejada.jpg" width="30%">
-                <img id="evento2" class="eventos" src="image/galo.jpeg" width="30%">
-                <button onclick="troca_noticia()" id="next">></button>
+        <div class="col-12 col-md-12" id="eventofundo">
+            <div class="row">
+                <div class="col-4 col-md-4"></div>
+                <div id="evento1" class="col-8 col-md-8">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4"><img class="eventos" src="image/banner_cervejada.jpg"></div>
+                            <div class="col-2">
+                                <p>Local: <br>Data:<br>Horario:</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="evento2" class="col-8 col-md-8">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4"><img class="eventos" src="image/galo.jpeg" width="30%"></div>
+                            <div class="col-2">
+                                <p>Local: <br>Data:<br>Horario:</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4"> </div>
+                <div class="col-4"><button onclick="troca_noticia(0)" id="next">></button></div>
             </div>
         </div>
+    </div>
     </div>
     <div class="container">
 

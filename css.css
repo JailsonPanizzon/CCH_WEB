@@ -63,4 +63,14 @@
 .eventos{
     width: 100%;
     padding: 2%;
+}
+.imagem_carrossel{
+    max-width: 100%;
+    margin-bottom: 30%;
+    margin: 0% auto;
+}
+.textSlide{
+    color: yellow;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient(to right ,rgba(0,0,0, 0),rgba(0,0,0, 0.7),rgba(0,0,0, 0))
 };

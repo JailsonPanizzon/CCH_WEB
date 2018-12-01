@@ -75,11 +75,30 @@
     background-image: linear-gradient(to right ,rgba(0,0,0, 0),rgba(0,0,0, 0.7),rgba(0,0,0, 0))
 }
 .textoQuadros{
-    color:white;
+    color:yellow;
     position: absolute; 
     bottom: 0%;
     
 }
 .imageQuadros{
     position: relative;
+    border : 0% auto;
+}
+.quadros{
+    max-width: 33%;
+    min-width: 33%;
+
+}
+.quadros div button img:hover{
+  
+  transform: scale(1.1);
+}
+.textoQuadros h3{
+    text-align: center; 
+    width: 80%;
+    margin: 0% auto;
+}
+.imagemQuadros button{
+    background-color: transparent;
+    border: none;
 };

@@ -101,27 +101,12 @@
   
   transform: scale(1.1);
 }
-<<<<<<< HEAD
-.textoQuadros p{
-    text-align: center; 
-    margin: 0% auto;
-    color: black;
-}
-
-.textoQuadrosContato p{
-=======
 .textoQuadros h3{
     text-align: center; 
     width: 80%;
->>>>>>> 360cd38ff4dd5824d4f139f8361991aa197191ee
     margin: 0% auto;
 }
 .imagemQuadros button{
     background-color: transparent;
     border: none;
-}
-.copyright{
-    text-align: center;
-    color: white;
-    margin: 4%;
-}
+};

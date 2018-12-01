@@ -95,4 +95,9 @@
 .imagemQuadros button{
     background-color: transparent;
     border: none;
-};
+}
+.copyright{
+    text-align: center;
+    color: white;
+    margin: 4%;
+}

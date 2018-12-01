@@ -92,6 +92,14 @@
     margin: 0% auto;
     color: black;
 }
+
+.textoQuadrosContato p{
+    text-align: center; 
+    margin: 0% auto;
+    color: black;
+    font-size: 220%;
+    font-weight: bold;
+}
 .imagemQuadros button{
     background-color: transparent;
     border: none;

@@ -93,7 +93,7 @@
 }
 
 .textoQuadros h2{
-    text-align: center; 
+    /*text-align: center; */
     margin: 0% auto;
     color: black;
 }
@@ -119,4 +119,11 @@
     color: white;
     font-weight: bold;
     margin: 0% auto;
+}
+
+.textoTitulo h1{
+    text-align: center;
+    color: #252525;
+    font-weight: bold;
 };
+

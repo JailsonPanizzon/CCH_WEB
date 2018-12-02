@@ -89,7 +89,7 @@
   transform: scale(1.1);
 }
 
-.textoQuadros p{
+.textoQuadros h2{
     text-align: center; 
     margin: 0% auto;
     color: black;

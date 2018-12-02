@@ -109,4 +109,11 @@
     text-align: center;
     color: white;
     margin: 4%;
-};
+}
+
+.patroc h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: 0% auto;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <title>AAA-DV</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<script>
+    var corbotoes = "#C7B200";
+    var corbotoes2 = "black";
+    function trocacor(el) {
+        el.style.backgroundColor = corbotoes2
+    }
+    function destrocacor(el) {
+        el.style.backgroundColor = corbotoes
+    }
+    window.onscroll = fundo;
+
+    function fundo() {
+        if ($(window).scrollTop() > 0.1 && $(window).scrollTop() < 10) {
+            document.getElementById("logo").style.width = "90%";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.15)";
+        }
+        else if ($(window).scrollTop() > 10 && $(window).scrollTop() < 20) {
+            document.getElementById("logo").style.width = "80%";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.30)";
+        }
+        else if ($(window).scrollTop() > 20 && $(window).scrollTop() < 30) {
+            document.getElementById("logo").style.width = "80%";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.35)";
+
+        }
+        else if ($(window).scrollTop() > 30 && $(window).scrollTop() < 40) {
+            document.getElementById("logo").style.width = "80%";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.45)";
+        }
+        else if ($(window).scrollTop() > 40 && $(window).scrollTop() < 50) {
+            document.getElementById("logo").style.width = "80%";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.457)";
+        }
+        else if ($(window).scrollTop() > 50 && $(window).scrollTop() < 60) {
+            document.getElementById("logo").style.width = "70%";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+        }
+        else if ($(window).scrollTop() > 60 && $(window).scrollTop() < 70) {
+            document.getElementById("logo").style.width = "60%";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.55)";
+        }
+        else if ($(window).scrollTop() > 70 && $(window).scrollTop() < 80) {
+            document.getElementById("logo").style.width = "50%";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.65)";
+        }
+        else if ($(window).scrollTop() > 80 && $(window).scrollTop() < 90) {
+            document.getElementById("logo").style.width = "40%";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.75)";
+        }
+        else if ($(window).scrollTop() > 90 && $(window).scrollTop() < 100) {
+            document.getElementById("logo").style.width = "40%";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.85)";
+        }
+        else if ($(window).scrollTop() > 100 && $(window).scrollTop() < 110) {
+            document.getElementById("logo").style.width = "40%";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 0.95)";
+        }
+        else if ($(window).scrollTop() > 125) {
+            document.getElementById("logo").style.width = "40%";
+            document.getElementById("superior").style.backgroundColor = "rgba(0, 0, 0, 1)";
+        }
+        else if ($(window).scrollTop() <= 0.1) {
+            document.getElementById("logo").style.width = "110%";
+            document.getElementById("superior").style.backgroundColor = "transparent";
+            document.getElementsByClassName("bt_titulo").style.width = "100%";
+        }
+    }
+    var cont = 1;
+    var intervalo = window.setInterval(troca_noticia, 3000);
+
+    function troca_noticia(num = 0) {
+
+        cont = cont - num;
+        if (cont < 0) {
+            cont = 2;
+        }
+
+        switch (cont) {
+            case 1:
+                $("#evento1").hide();
+                $("#evento2").show();
+                break;
+            case 2:
+                $("#evento2").hide();
+                $("#evento1").show();
+                break;
+        }
+        cont < 2 ? cont++ : cont = 1;
+    }
+
+    function hoverBotao(iden) {
+        document.getElementById(iden).style.backgroundColor = "#303030";
+    }
+    function unHoverBotao(iden) {
+        document.getElementById(iden).style.backgroundColor = "transparent";
+    }
+
+    function hoverquadros(iden) {
+        document.getElementById(iden).style.backgroundImage = "150%";
+    }
+    function unHoverquadros(iden) {
+        $(iden).next().width = "200%";
+    }
+
+    $('.carousel').carousel({
+        interval: 2000
+    })
+</script>
+
+<script src="jquery-3.3.1.js"></script>
+<script type="text/javascript" src="arquivo.js"></script>
+
+
+<body onload="troca_noticia()">
+    <div style="position: fixed">
+        <img src="image/fundo2.jpg" height="100%">
+    </div>
+    <div class="row" style="position: fixed;z-index: 2;" id="superior">
+        <div class="col-3 col-md-2"><img src="image/galo23.png" width="110%" id="logo" onclick="location.href='Home.html'"></div>
+        <div class="col-8 col-md-10 ">
+            <div class="row">
+                <div class="col-0 col-md-2 "> </div>
+                <div class="col-4 col-md-2" class="menu">
+                    <button class="bt_titulo" id="not" onmouseover="hoverBotao('not')" onmouseout="unHoverBotao('not')"
+                        onclick="location.href='Noticias.html'">Notícias</button>
+                </div>
+                <div class="col-4 col-md-2" class="menu">
+                    <button class="bt_titulo" id="soc" onmouseover="hoverBotao('soc')" onmouseout="unHoverBotao('soc')"
+                        onclick="location.href='Socio.html'">Sócio</button>
+                </div>
+                <div class="col-4 col-md-2" class="menu">
+                    <button class="bt_titulo" id="esp" onmouseover="hoverBotao('esp')" onmouseout="unHoverBotao('esp')"
+                        onclick="location.href='Esportes.html'">Esportes</button>
+                </div>
+                <div class="col-4 col-md-2" class="menu">
+                    <button class="bt_titulo" id="eve" onmouseover="hoverBotao('eve')" onmouseout="unHoverBotao('eve')"
+                        onclick="location.href='Eventos.html'">Eventos</button>
+                </div>
+                <div class="col-4 col-md-2" id="menu">
+                    <button class="bt_titulo" id="con" onmouseover="hoverBotao('con')" onmouseout="unHoverBotao('con')"
+                        onclick="location.href='Contato.html'">Contato</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-12 " id="banner">
+            <img src="image/banner_cervejada.jpg" width="100%">
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>Carousel Example</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:70%;margin: 0% auto">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" style="max-height: 30%;">
+                <div class="item active">
+                    <img class="imagem_carrossel" src="image/volei.jpg" alt="Evento 1">
+                    <div class="carousel-caption d-none d-md-block textSlide">
+                        <h3><a href="Eventos.html" style="color:yellow">Vôlei: Ginasio UTFPR</a></h3>
+                        <p>02/12/2018 15:30</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="imagem_carrossel" src="image/hand.jpg" alt="Evento 2">
+                    <div class="carousel-caption d-none d-md-block textSlide">
+                        <h3><a href="Eventos.html" style="color:yellow">Handebol: Ginasio Teodorico</a></h3>
+                        <p>08/12/2018 14:45</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="imagem_carrossel" src="image/fut.jpg" alt="Evento 3">
+                    <div class="carousel-caption d-none d-md-block textSlide">
+                        <h3><a href="Eventos.html" style="color:yellow">Futsal: Ginasio Anísio Teixeira</a></h3>
+                        <p>31/11/2018 18:00</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="imagem_carrossel" src="image/sitee.jpg" alt="Evento 3">
+                    <div class="carousel-caption d-none d-md-block textSlide">
+                        <h3><a href="Home.html" style="color:yellow">Novo Site da AAA-DV</a></h3>
+                        <p>www.galoucuraDv.com.uk</p>
+                    </div>
+                </div>
+
+
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12 col-md-9 " id="principal">
+                <div class="row">
+
+                    uiuiui
+
+
+                </div>
+            </div>
+            <div class="col-12 col-md-3" id="patrocinadores">
+                <img src="image/UTFPR sem fundo.png" width="100%">
+                <img src="image/cresol.png" width="100%">
+                <img src="image/servdata_logo.png" width="100%">
+                <img src="image/dez.png" width="100%">
+                <img src="image/cp.png" width="100%">
+
+
+            </div>
+            <div class="col-12 copyright">
+                <p> @Copyright 2018. Todos os diretos reservados</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

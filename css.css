@@ -3,6 +3,9 @@
     text-align: center;
     background-color: transparent
 }
+#superior{
+    background-color: rgba(0,0,0, 0.4)
+}
 .menu {
     text-align:justify;
     color: rgba(255, 255, 255, .9);

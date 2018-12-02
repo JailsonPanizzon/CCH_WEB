@@ -105,3 +105,7 @@
     $('.carousel').carousel({
         interval: 2000
     })
+
+    function limpaForm(){
+        document.getElementById("formulinho").reset();
+    }

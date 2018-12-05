@@ -127,8 +127,20 @@
     font-weight: bold;
 }
 
+#jogadorDIV{
+    margin: 3%;
+}
+
+#posicaoPlayer{
+    font-weight: bold;
+    margin: 0% auto;
+    color: black;
+}
+
+
 .textoTitulo h3{
     text-align: center;
     color: #252525;
 };
+
 

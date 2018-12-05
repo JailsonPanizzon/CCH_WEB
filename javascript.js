@@ -111,24 +111,42 @@ function limpaForm() {
 }
 
 function aciona1() {
-    alert("teu cu é meu kkkkk");
+    $("#posicaoPlayer").text("Posição 1");
+    $("#nomePlayer").text("Amanda Nunes");
+    $("#descPlayer").text("19 anos, joga volei profissional há 16 anos.");
+    $("#imgPlayer").attr("src", "image/players/1.png");
 }
 
 function aciona2() {
-
+    $("#posicaoPlayer").text("Posição 2");
+    $("#nomePlayer").text("Maria Tereza Silva");
+    $("#descPlayer").text("22 anos, pratica o esporte desde seus 10 anos.");
+    $("#imgPlayer").attr("src", "image/players/2.png");
 }
 function aciona3() {
-
+    $("#posicaoPlayer").text("Posição 3");
+    $("#nomePlayer").text("Carla Mascarenhas");
+    $("#descPlayer").text("20 anos, já ganhou 5 campeonatos estaduais, somente neste ano.");
+    $("#imgPlayer").attr("src", "image/players/3.png");
 }
 
 function aciona4() {
-
+    $("#posicaoPlayer").text("Posição 4");
+    $("#nomePlayer").text("Eduarda Gentil");
+    $("#descPlayer").text("19 anos, apaixonada pelo esporte, pratica há mais de 10 anos.");
+    $("#imgPlayer").attr("src", "image/players/4.png");
 }
 
 function aciona5() {
-
+    $("#posicaoPlayer").text("Posição 5");
+    $("#nomePlayer").text("Fabiana Souza");
+    $("#descPlayer").text("21 anos, joga volei há 5 anos, neste período já ganhou mais de 2 campeonatos.");
+    $("#imgPlayer").attr("src", "image/players/5.png");
 }
 
 function aciona6(){
-        
+    $("#posicaoPlayer").text("Posição 6");
+    $("#nomePlayer").text("Gisele Lee");
+    $("#descPlayer").text("18 anos, a mais jovem do time, não perde um treino sequer.");
+    $("#imgPlayer").attr("src", "image/players/6.png");
 }

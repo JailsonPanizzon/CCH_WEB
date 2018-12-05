@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <title>AAA-DV</title>
+    <script type="text/javascript" src="javascript.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<script src="jquery-3.3.1.js"></script>
+<script type="text/javascript" src="arquivo.js"></script>
+
+
+<body onload="troca_noticia()">
+    <div style="position: fixed">
+        <img src="image/fundo2.jpg" height="100%">
+    </div>
+    <div class="row" style="position: fixed;z-index: 2;" id="superior">
+        <div class="col-3 col-md-2"><img src="image/galo23.png" width="110%" id="logo" onclick="location.href='Home.html'"></div>
+        <div class="col-8 col-md-10 ">
+            <div class="row">
+                <div class="col-0 col-md-2 "> </div>
+                <div class="col-4 col-md-2" class="menu">
+                    <button class="bt_titulo" id="not" onmouseover="hoverBotao('not')" onmouseout="unHoverBotao('not')"
+                        onclick="location.href='Noticias.html'">Notícias</button>
+                </div>
+                <div class="col-4 col-md-2" class="menu">
+                    <button class="bt_titulo" id="soc" onmouseover="hoverBotao('soc')" onmouseout="unHoverBotao('soc')"
+                        onclick="location.href='Socio.html'">Sócio</button>
+                </div>
+                <div class="col-4 col-md-2" class="menu">
+                    <button class="bt_titulo" id="esp" onmouseover="hoverBotao('esp')" onmouseout="unHoverBotao('esp')"
+                        onclick="location.href='Esportes.html'">Esportes</button>
+                </div>
+                <div class="col-4 col-md-2" class="menu">
+                    <button class="bt_titulo" id="eve" onmouseover="hoverBotao('eve')" onmouseout="unHoverBotao('eve')"
+                        onclick="location.href='Eventos.html'">Eventos</button>
+                </div>
+                <div class="col-4 col-md-2" id="menu">
+                    <button class="bt_titulo" id="con" onmouseover="hoverBotao('con')" onmouseout="unHoverBotao('con')"
+                        onclick="location.href='Contato.html'">Contato</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-12 " id="banner">
+            <img src="image/banner_cervejada.jpg" width="100%">
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>Carousel Example</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:70%;margin: 0% auto">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" style="max-height: 30%;">
+                <div class="item active">
+                    <img class="imagem_carrossel" src="image/volei.jpg" alt="Evento 1">
+                    <div class="carousel-caption d-none d-md-block textSlide">
+                        <h3><a href="Eventos.html" style="color:yellow">Vôlei: Ginasio UTFPR</a></h3>
+                        <p>02/12/2018 15:30</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="imagem_carrossel" src="image/hand.jpg" alt="Evento 2">
+                    <div class="carousel-caption d-none d-md-block textSlide">
+                        <h3><a href="Eventos.html" style="color:yellow">Handebol: Ginasio Teodorico</a></h3>
+                        <p>08/12/2018 14:45</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="imagem_carrossel" src="image/fut.jpg" alt="Evento 3">
+                    <div class="carousel-caption d-none d-md-block textSlide">
+                        <h3><a href="Eventos.html" style="color:yellow">Futsal: Ginasio Anísio Teixeira</a></h3>
+                        <p>31/11/2018 18:00</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="imagem_carrossel" src="image/sitee.jpg" alt="Evento 3">
+                    <div class="carousel-caption d-none d-md-block textSlide">
+                        <h3><a href="Home.html" style="color:yellow">Novo Site da AAA-DV</a></h3>
+                        <p>www.galoucuraDv.com.uk</p>
+                    </div>
+                </div>
+
+
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12 col-md-9 " id="principal">
+                <div class="row">
+                    <div class="col-12 col-md-12 textoTitulo">
+                        <h1>Vôlei</h1>
+                        <h3>Veja nosso time.</h3>
+                        </br>
+                    </div>
+                    <div class="col-12 col-md-12">
+                        <img src="image/quadra.png" heith="50%" usemap="#mapito">
+                        <map name="mapito">
+                            <area shape="poly" coords="240,750, 315,750, 315,825, 240,825" onmouseover="aciona6()" alt="Posição 6" />
+                            <area shape="poly" coords="90,845, 165,845, 165,925, 90,925" onmouseover="aciona5()" alt="Posição 5" />
+                            <area shape="poly" coords="60,570, 140,570, 140,645, 60,645" onmouseover="aciona4()" alt="Posição 4" />
+                            <area shape="poly" coords="240,515, 315,515, 315,590, 240,590" onmouseover="aciona3()" alt="Posição 3" />
+                            <area shape="poly" coords="410,570, 490,570, 490,645, 410,645" onmouseover="aciona2()" alt="Posição 2" />
+                            <area shape="poly" coords="395,845, 470,845, 470,925, 395,925" onmouseover="aciona1()" alt="Posição 1" />
+                        </map>
+                    </div>
+
+                    <div class="col-12 col-md-12" id="jogadorDIV">
+                        <div class="imagemQuadros">
+                            <div class="row">
+                                <div class="col-5">
+                                    <button onmouseover="hoverquadros(this)" onmouseout="unHoverquadros(this)"><img src="image/galito.jpg"
+                                            width="70%"></button>
+                                </div>
+                                <div class="col-7 textoQuadros">
+                                    <h2>Comunicado</h2>
+                                    <h4>Visando facilitar a comunicação entre a ASSOCIAÇÃO ATLÉTICA ACADÊMICA UTFPR
+                                        DOIS VIZINHOS, seus torcedores e membros da bateria, criamos um grupo no
+                                        whatsapp para repassar as informações de forma mais rápida entre todos.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-3" id="patrocinadores">
+                <div class="col-12 col-md-3 patroc">
+                    <h2>Patrocínio</h2>
+                    <h2>____________</h2>
+                </div>
+                <a href="http://www.utfpr.edu.br"><img src="image/UTFPR sem fundo.png" width="100%"></a>
+                <a href="https://www.cresol.com.br/site/"><img src="image/cresol.png" width="100%"></a>
+                <a href="http://www.servdatanorte.com/"><img src="image/servdata_logo.png" width="100%"></a>
+                <a href="https://www.deztelecom.net.br/site/"><img src="image/dez.png" width="100%"></a>
+                <img src="image/cp.png" width="100%">
+            </div>
+            <div class="col-12 copyright">
+                <p> @Copyright 2018. Todos os diretos reservados</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

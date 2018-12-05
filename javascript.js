@@ -169,3 +169,8 @@ function tamanho(){
         $('#pequena').hide();
     }
 }
+
+function enviaForm() {
+    document.getElementById("formulinho").reset();
+    $("#divEnviado h3").text("Seus dados foram enviados com sucesso! Aguarde nosso contato.");
+}

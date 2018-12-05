@@ -143,9 +143,11 @@
     color: #252525;
 }
 
+#divEnviar h3{
+    margin: 2%;
+    color: #00c659;
+};
+
 #grande{
     hide
 }
-;
-
-

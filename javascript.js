@@ -160,7 +160,7 @@ function retornaStock(){
 
 function tamanho(){
     var tam = $(window).width();
-    if(tam < 700){
+    if(tam < 1000){
         $('#grande').hide();
         $('#pequena').show();
 

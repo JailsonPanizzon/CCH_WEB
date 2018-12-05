@@ -157,3 +157,15 @@ function retornaStock(){
     $("#descPlayer").text("Sobre o jogador");
     $("#imgPlayer").attr("src", "image/user.png");
 }
+
+function tamanho(){
+    var tam = $(window).width();
+    if(tam < 700){
+        $('#grande').hide();
+        $('#pequena').show();
+
+    }else{
+        $('#grande').show();
+        $('#pequena').hide();
+    }
+}

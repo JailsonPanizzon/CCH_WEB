@@ -126,12 +126,12 @@
                     <div class="col-12 col-md-12">
                         <img src="image/quadra.png" heith="50%" usemap="#mapito">
                         <map name="mapito">
-                            <area shape="poly" coords="240,750, 315,750, 315,825, 240,825" onmouseover="aciona6()" alt="Posição 6" />
-                            <area shape="poly" coords="90,845, 165,845, 165,925, 90,925" onmouseover="aciona5()" alt="Posição 5" />
-                            <area shape="poly" coords="60,570, 140,570, 140,645, 60,645" onmouseover="aciona4()" alt="Posição 4" />
-                            <area shape="poly" coords="240,515, 315,515, 315,590, 240,590" onmouseover="aciona3()" alt="Posição 3" />
-                            <area shape="poly" coords="410,570, 490,570, 490,645, 410,645" onmouseover="aciona2()" alt="Posição 2" />
-                            <area shape="poly" coords="395,845, 470,845, 470,925, 395,925" onmouseover="aciona1()" alt="Posição 1" />
+                            <area shape="poly" coords="240,750, 315,750, 315,825, 240,825" onmouseover="aciona6()" onmouseout="retornaStock()" alt="Posição 6" />
+                            <area shape="poly" coords="90,845, 165,845, 165,925, 90,925" onmouseover="aciona5()" onmouseout="retornaStock()" alt="Posição 5" />
+                            <area shape="poly" coords="60,570, 140,570, 140,645, 60,645" onmouseover="aciona4()" onmouseout="retornaStock()" alt="Posição 4" />
+                            <area shape="poly" coords="240,515, 315,515, 315,590, 240,590" onmouseover="aciona3()" onmouseout="retornaStock()" alt="Posição 3" />
+                            <area shape="poly" coords="410,570, 490,570, 490,645, 410,645" onmouseover="aciona2()" onmouseout="retornaStock()" alt="Posição 2" />
+                            <area shape="poly" coords="395,845, 470,845, 470,925, 395,925" onmouseover="aciona1()" onmouseout="retornaStock()" alt="Posição 1" />
                         </map>
                     </div>
                     <div class="jumbotron" id="jogadorDIV">
@@ -143,8 +143,8 @@
 
                                 <div class="col-8 textoQuadros">
                                     <h2 id="posicaoPlayer">Selecione uma posição</h2>
-                                    <h3 id="nomePlayer">Selecione uma posição</h3>
-                                    <h4 id="descPlayer">Selecione uma posição</h4>                                   
+                                    <h3 id="nomePlayer">Nome do jogador</h3>
+                                    <h4 id="descPlayer">Sobre o jogador</h4>                                   
                                 </div>
                             </div>
                         </div>

@@ -150,3 +150,10 @@ function aciona6(){
     $("#descPlayer").text("18 anos, a mais jovem do time, não perde um treino sequer.");
     $("#imgPlayer").attr("src", "image/players/6.png");
 }
+
+function retornaStock(){
+    $("#posicaoPlayer").text("Selecione uma posição");
+    $("#nomePlayer").text("Nome do jogador");
+    $("#descPlayer").text("Sobre o jogador");
+    $("#imgPlayer").attr("src", "image/user.png");
+}
